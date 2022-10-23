@@ -8,4 +8,8 @@ def main(s):
     Returns:
         bool: answer
     """
-    return
+    if s[0] == s[-1]:
+        return True
+    else:
+        return False
+print(main("adfdff"))
