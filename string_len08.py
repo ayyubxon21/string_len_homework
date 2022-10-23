@@ -8,4 +8,8 @@ def main(s):
     Returns:
         str: answer
     """
-    return
+    if len(s) == 5:
+        return s[2]
+    if len(s) == 4:
+        return s[1:3]
+print(main("cool"))
