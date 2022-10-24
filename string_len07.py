@@ -8,19 +8,15 @@ def main(s1,s2,s3):
     Returns:
         string
     """
-    
-    if len(s1)%2==0 and len(s2)%2==0 and len(s3)%2==0:
-        return '"[]"'
-    if len(s1)%2==1 and len(s2)%2==0 and len(s3)%2==0:
-        return '"[s1]"'
-    if len(s1)%2==1 and len(s2)%2==1 and len(s3)%2==0:
-        return '"[s1,s2]"'
-    if len(s1)%2==1 and len(s2)%2==1 and len(s3)%2==1:
-        return '"[s1,s2,s3]"'
-    if len(s1)%2==0 and len(s2)%2==1 and len(s3)%2==0:
-        return '"[s2]"'
-    if len(s1)%2==0 and len(s2)%2==0 and len(s3)%2==1:    
-        return '"[s3]"'
-    if len(s1)%2==0 and len(s2)%2==1 and len(s3)%2==1:
-        return '"[s2,s3]"'
-print(main("cgkoode","sojkjmhme","chohhols"))
+    n1 = len(s1)
+    n2 = len(s2)
+    n3 = len(s3)
+    ans = '['
+    if n1%2!=0:
+        ans+=s1
+    if n2%2!=0:
+        ans+=","+s2
+    if n3%2!=0:
+        ans+=","+s3
+    return ans+']'
+print(main('14444','22','33'))
