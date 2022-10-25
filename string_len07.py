@@ -19,4 +19,4 @@ def main(s1,s2,s3):
     if n3%2!=0:
         ans+=","+s3
     return ans+']'
-print(main('14444','22','33'))
+print(main('14444','22','334'))
